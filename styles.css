@@ -1,0 +1,90 @@
+:root {
+    --Orange: hsl(25, 97%, 53%);
+    --White: hsl(0, 0%, 100%);
+    --LightGrey: hsl(217, 12%, 63%);
+    --MediumGrey: hsl(216, 12%, 54%);
+    --DarkBlue: hsl(213, 19%, 18%);
+    --DarkOpaqueBlue: hsla(216,12%,54%,0.1);
+    --VeryDarkBlue: hsl(216, 12%, 8%);
+    --paragraph: 15px;
+    --normal: 400;
+    --bold: 700;
+}
+
+* {
+    font-family: 'Overpass', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    color: var(--LightGrey);
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background: var(--VeryDarkBlue);
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-container{
+    padding: 24px;
+    width: 400px;
+    height: 400px;
+    background: var(--DarkBlue);
+    border-radius: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    
+}
+
+.star-icon, .choice{
+    width: 50px;
+    height: 50px;
+    background: var(--DarkOpaqueBlue);
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    border-radius: 50%;
+}
+
+h1{
+    color: var(--White);
+}
+
+
+.choice-list{
+    display: flex;
+    justify-content: space-between;
+}
+
+.choice:hover{
+    background: var(--Orange);
+    color: var(--White);
+    cursor: pointer;
+}
+.choice:focus{
+    background-color: var(--LightGrey);
+}
+
+.submit-btn{
+    width: 100%;
+    height: 50px;
+    display: grid;
+    text-align: center;
+    align-items: center;
+    list-style: none;
+    border: 2px;
+    border-radius: 24px;
+    background-color: var(--Orange);
+    color: var(--White);
+    text-transform:uppercase;
+    font-weight: 700;
+}
+
+.submit-btn:hover{
+    background-color: var(--White);
+    color: var(--Orange);
+}
+
